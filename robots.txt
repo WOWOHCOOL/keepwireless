@@ -1,0 +1,8 @@
+# Robots.txt for KeepWireless
+
+User-agent: *
+Allow: /
+
+Sitemap: https://keepwireless.tech/sitemap.xml
+
+# Crawl-delay: 1
