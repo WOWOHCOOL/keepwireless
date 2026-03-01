@@ -3,6 +3,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://keepwireless.tech/sitemap.xml
+Sitemap: https://keepwireless.com/sitemap.xml
 
 # Crawl-delay: 1
