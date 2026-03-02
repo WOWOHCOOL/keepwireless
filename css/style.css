@@ -1741,6 +1741,19 @@ button {
         gap: 24px;
     }
     
+    .articles-preview {
+        padding: 60px 0;
+    }
+    
+    .articles-preview .articles-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .articles-preview .article-card .article-img {
+        height: 200px;
+    }
+    
     .section-header h2 {
         font-size: 28px;
     }
