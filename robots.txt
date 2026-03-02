@@ -3,6 +3,9 @@
 User-agent: *
 Allow: /
 
+# 声明主域名
+Host: keepwireless.com
+
 Sitemap: https://keepwireless.com/sitemap.xml
 
-# Crawl-delay: 1
+Crawl-delay: 1
