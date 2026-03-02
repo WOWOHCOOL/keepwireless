@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Nico - Wireless Charging Technology Consultant at KeepWireless. Expert in Qi2 certification, MagSafe products, and wireless charging technology with 5+ years experience.">
+    <meta name="description" content="About Nico - Supply Chain Management Expert at KeepWireless. 10+ years experience in wireless charging, Belkin/Bosch partner, helping global B2B clients source quality products from China.">
     <meta name="keywords" content="about Nico wireless charging expert, Qi2 consultant, MagSafe sourcing agent, wireless charging specialist Shenzhen, product certification expert">
     <link rel="canonical" href="https://keepwireless.com/about.html">
     
@@ -11,6 +11,76 @@
     
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+        .contact-item:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--primary);
+            color: var(--text);
+        }
+        .contact-item svg {
+            width: 16px;
+            height: 16px;
+        }
+        .about-hero-visual {
+            position: relative;
+        }
+        .hero-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(102,126,234,0.4) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: -1;
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+        @keyframes pulse-glow {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+            50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+        }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .about-hero-content h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+        }
+        .about-hero-content .highlight {
+            font-size: 2.5rem;
+        }
+    </style>
     
     <script type="application/ld+json">
     {
@@ -64,25 +134,113 @@
 
     <main>
         <section class="about-hero">
+            <div class="hero-particles" id="particles"></div>
             <div class="container">
                 <div class="about-hero-grid">
                     <div class="about-hero-content">
                         <span class="section-tag">The Person Behind KeepWireless</span>
-                        <h1>I'm Nico.<br><span class="highlight">Your Technical Gatekeeper.</span></h1>
+                        <h1>I'm <span class="gradient-text">Nico Gung</span>.<br><span class="highlight">Your Supply Chain Guardian.</span></h1>
                         <p class="about-intro">
-                            In a market flooded with "Qi2-certified" products that aren't, and "15W fast charging" that barely reaches 10W — I exist to bring transparency.
+                            Supply Chain Management Expert with 10+ years driving explosive growth for global brands. I bridge the gap between world-class manufacturers and businesses that demand excellence.
                         </p>
-                        <p>
-                            I don't sell products. I sell verified expertise. Every recommendation I make has passed my lab's strict testing protocol. No factory marketing. No inflated specs. Just measurable data you can trust.
-                        </p>
+                        <div class="hero-contact">
+                            <a href="tel:+8613632293910" class="contact-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                                <span>+86 13632293910</span>
+                            </a>
+                            <a href="mailto:nico@keepwireless.com" class="contact-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                <span>nico@keepwireless.com</span>
+                            </a>
+                            <span class="contact-item">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                <span>Dongguan, China</span>
+                            </span>
+                        </div>
                     </div>
                     <div class="about-hero-visual">
                         <div class="about-img-wrapper">
                             <img src="images/nico-laboratory-expert.webp" alt="Nico - Wireless Charging Laboratory Expert" loading="lazy">
-                            <div class="about-badge">
-                                <span>5+ Years</span>
-                                <small>Wireless Tech</small>
+                            <div class="about-badge floating">
+                                <span class="badge-main">10+ Years</span>
+                                <small>Supply Chain</small>
                             </div>
+                            <div class="hero-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-skills">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="section-tag">Core Competencies</span>
+                    <h2>Skills & Expertise</h2>
+                </div>
+                <div class="skills-showcase">
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">🎯</div>
+                        <h3>Strategic Sourcing</h3>
+                        <p>Secured RMB 350M+ in total sales by identifying and sourcing premium products for global brands like Belkin and Bosch. Expert in finding reliable ODM/OEM partners in China.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">🤝</div>
+                        <h3>Contract Negotiation</h3>
+                        <p>Negotiated exclusive deals with 53+ verified suppliers. Secured favorable payment terms, pricing, and production schedules that protect your business interests.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">💰</div>
+                        <h3>Cost Optimization</h3>
+                        <p>Achieved proven 5%+ cost savings through strategic supplier negotiations without compromising quality. Your profit margins are my priority.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">🏭</div>
+                        <h3>Supplier Management</h3>
+                        <p>Direct relationships with 53+ vetted manufacturers in Dongguan & Shenzhen. From prototype to mass production — I ensure quality at every step.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--width: 94%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">🌐</div>
+                        <h3>Global Trade</h3>
+                        <p>Fluent in English (CET-6). Experienced in international logistics, customs, and cross-border compliance. Serving clients across USA, UK, Germany, and Canada.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">📦</div>
+                        <h3>Product Development</h3>
+                        <p>Led development of 20+ successful products from concept to launch. Specializing in wireless chargers, power banks, and consumer electronics.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--width: 91%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">✅</div>
+                        <h3>Quality Assurance</h3>
+                        <p>Implemented strict quality control protocols across production lines. 100% inspection capability ensures every shipment meets international standards.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--width: 89%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">📈</div>
+                        <h3>Supply Chain Excellence</h3>
+                        <p>End-to-end supply chain management from factory floor to your warehouse. On-time delivery rate of 98%+ across all projects.</p>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="--width: 93%"></div>
                         </div>
                     </div>
                 </div>
@@ -93,46 +251,114 @@
             <div class="container">
                 <div class="story-grid">
                     <div class="story-content">
-                        <h2>My Journey</h2>
-                        <div class="story-item">
-                            <span class="story-year">2019</span>
-                            <div class="story-text">
-                                <h4>Entered Wireless Charging Industry</h4>
-                                <p>Started as a hardware engineer focusing on PCB design and power conversion efficiency for major ODM factories in Shenzhen.</p>
+                        <h2>Career Journey</h2>
+                        <div class="timeline">
+                            <div class="story-item">
+                                <span class="story-year">2023 - Present</span>
+                                <div class="story-text">
+                                    <h4>Founder @ KeepWireless</h4>
+                                    <p>Launched KeepWireless as a trusted B2B platform connecting global buyers with verified wireless charging suppliers in China. Providing product verification, factory sourcing, and supply chain solutions for businesses worldwide. Serving clients in USA, UK, Germany, Canada, and more.</p>
+                                    <div class="achievement-tags">
+                                        <span class="tag">B2B Platform</span>
+                                        <span class="tag">Product Verification</span>
+                                        <span class="tag">Global Clients</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="story-item">
-                            <span class="story-year">2021</span>
-                            <div class="story-text">
-                                <h4>Discovered the Certification Crisis</h4>
-                                <p>Realized that over 60% of products claiming "Qi2 certified" either had fake certificates or hadn't completed proper WPC testing. Began systematic verification.</p>
+                            <div class="story-item">
+                                <span class="story-year">2022 - 2023</span>
+                                <div class="story-text">
+                                    <h4>Sales Director @ OPAQI Technology</h4>
+                                    <p>Leading overseas market expansion with 127 new customers acquired and 23 closed deals. Managing 53 suppliers while maintaining on-time project delivery. Achieved 5% cost savings through strategic negotiations.</p>
+                                    <div class="achievement-tags">
+                                        <span class="tag">127 Clients</span>
+                                        <span class="tag">23 Deals</span>
+                                        <span class="tag">5% Cost Savings</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="story-item">
-                            <span class="story-year">2023</span>
-                            <div class="story-text">
-                                <h4>Launched KeepWireless</h4>
-                                <p>Created this platform to bridge the gap between B2B buyers and verified quality products. Started publishing lab test results and sourcing guides.</p>
+                            <div class="story-item">
+                                <span class="story-year">2020 - 2022</span>
+                                <div class="story-text">
+                                    <h4>Sales Manager @ AOHAI Technology</h4>
+                                    <p>Led Belkin's wireless charger and power bank development with RMB 200M+ annual sales. Developed Bosch's Audi vehicle-mounted wireless charger projects achieving RMB 150M in sales.</p>
+                                    <div class="achievement-tags">
+                                        <span class="tag">RMB 200M+</span>
+                                        <span class="tag">RMB 150M</span>
+                                        <span class="tag">Belkin/Bosch</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="story-item">
-                            <span class="story-year">2026</span>
-                            <div class="story-text">
-                                <h4>Serving Global B2B Clients</h4>
-                                <p>Now helping businesses in USA, UK, Germany, and Canada source authentic Qi2/MagSafe products with confidence.</p>
+                            <div class="story-item">
+                                <span class="story-year">2015 - 2020</span>
+                                <div class="story-text">
+                                    <h4>Sales Manager @ ZZ Technology</h4>
+                                    <p>Served major international retail and brand clients including Walmart, ESR, and Baseus. Managed product sourcing and supply chain for consumer electronics including phone accessories, chargers, and power banks. Built strong B2B relationships across global markets.</p>
+                                    <div class="achievement-tags">
+                                        <span class="tag">Walmart</span>
+                                        <span class="tag">ESR</span>
+                                        <span class="tag">Baseus</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="story-item">
+                                <span class="story-year">2010</span>
+                                <div class="story-text">
+                                    <h4>Education</h4>
+                                    <p>Bachelor of Business Administration from Wuhan City University of Foreign Studies. English Level 6 Certificate holder.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="story-image">
-                        <svg viewBox="0 0 400 500" fill="none">
-                            <rect x="20" y="20" width="360" height="460" rx="20" fill="#1a1a2e"/>
-                            <rect x="50" y="50" width="300" height="400" rx="15" fill="#16213e"/>
-                            <path d="M100 150h200M100 200h200M100 250h200M100 300h150" stroke="#4ade80" stroke-width="2" opacity="0.3"/>
-                            <circle cx="200" cy="250" r="80" stroke="#4ade80" stroke-width="2" stroke-dasharray="10 5"/>
-                            <circle cx="200" cy="250" r="40" fill="#4ade80" opacity="0.1"/>
-                            <text x="200" y="255" text-anchor="middle" fill="#4ade80" font-size="48" font-weight="bold">500+</text>
-                            <text x="200" y="280" text-anchor="middle" fill="#fff" font-size="14">Products Tested</text>
-                        </svg>
+                        <div class="stats-showcase">
+                            <div class="stat-card">
+                                <span class="stat-icon">💼</span>
+                                <span class="stat-number" data-target="127">0</span>
+                                <span class="stat-label">New Clients</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-icon">💵</span>
+                                <span class="stat-number" data-target="350">0</span>
+                                <span class="stat-label">Million RMB Sales</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-icon">🏭</span>
+                                <span class="stat-number" data-target="53">0</span>
+                                <span class="stat-label">Suppliers Managed</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-icon">📦</span>
+                                <span class="stat-number" data-target="23">0</span>
+                                <span class="stat-label">Deals Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-family">
+            <div class="container">
+                <div class="family-section">
+                    <div class="family-visual">
+                        <div class="family-illustration">
+                            <div class="family-icon">👨‍👩‍👧</div>
+                            <div class="heart-pulse">❤️</div>
+                        </div>
+                    </div>
+                    <div class="family-content">
+                        <span class="section-tag">Personal Life</span>
+                        <h2>Family & Motivation</h2>
+                        <p>
+                            I come from a warm and harmonious family. After marriage, I established my own small family with my lover. We have a girl who is living with us and is in kindergarten.
+                        </p>
+                        <p>
+                            My parents have always given me endless support and love. They not only taught me the principles of life but also encouraged me to pursue my dreams. My husband and I love each other and work hand in hand. Our family life is full of happiness and warmth.
+                        </p>
+                        <p class="family-quote">
+                            "The warmth and support of the family make me full of motivation and confidence in my career and life."
+                        </p>
                     </div>
                 </div>
             </div>
