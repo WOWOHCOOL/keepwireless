@@ -266,3 +266,101 @@ if (!Element.prototype.closest) {
         return null;
     };
 }
+
+// About Page Enhanced Animations
+document.addEventListener('DOMContentLoaded', function() {
+    // Skill Cards Progress Bar Animation
+    const skillCards = document.querySelectorAll('.skill-card');
+    
+    const skillObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const progressBars = entry.target.querySelectorAll('.progress-bar');
+                progressBars.forEach(bar => {
+                    const width = bar.style.getPropertyValue('--width');
+                    bar.style.width = '0%';
+                    setTimeout(() => {
+                        bar.style.width = width;
+                    }, 100);
+                });
+            }
+        });
+    }, { threshold: 0.3 });
+
+    skillCards.forEach(card => skillObserver.observe(card));
+
+    // Stat cards counter animation for about page
+    const aboutStatNumbers = document.querySelectorAll('.stat-number[data-target]');
+    let statsAnimated = false;
+    
+    function animateAboutStats() {
+        if (statsAnimated) return;
+        statsAnimated = true;
+        
+        aboutStatNumbers.forEach(stat => {
+            const target = parseInt(stat.getAttribute('data-target'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+            
+            const updateCounter = () => {
+                current += step;
+                if (current < target) {
+                    stat.textContent = Math.floor(current) + (stat.dataset.suffix || '');
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    stat.textContent = target + (stat.dataset.suffix || '');
+                }
+            };
+            
+            updateCounter();
+        });
+    }
+
+    // Observe stats section for animation
+    const statsSection = document.querySelector('.stats-showcase');
+    if (statsSection) {
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateAboutStats();
+                }
+            });
+        }, { threshold: 0.3 });
+        statsObserver.observe(statsSection);
+    }
+
+    // Also animate on page load if stats are visible
+    setTimeout(animateAboutStats, 500);
+
+    // Floating animation for badges
+    const floatingElements = document.querySelectorAll('.floating');
+    floatingElements.forEach(el => {
+        el.style.animationDelay = Math.random() * 2 + 's';
+    });
+
+    // Skill card tilt effect (simple version)
+    skillCards.forEach(card => {
+        card.addEventListener('mousemove', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = (y - centerY) / 20;
+            const rotateY = (centerX - x) / 20;
+            
+            this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+        });
+    });
+
+    // Hero glow animation
+    const heroGlow = document.querySelector('.hero-glow');
+    if (heroGlow) {
+        heroGlow.style.animation = 'pulse-glow 3s ease-in-out infinite';
+    }
+});
