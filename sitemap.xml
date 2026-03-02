@@ -2,55 +2,110 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://keepwireless.com/</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://keepwireless.com/index.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://keepwireless.com/about.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://keepwireless.com/products.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://keepwireless.com/products.html?cat=3in1</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://keepwireless.com/products.html?cat=stand</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://keepwireless.com/products.html?cat=pad</loc>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://keepwireless.com/products.html?cat=car</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://keepwireless.com/articles.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://keepwireless.com/contact.html</loc>
-        <lastmod>2026-03-01</lastmod>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <!-- Article Pages -->
+    <url>
+        <loc>https://keepwireless.com/articles/qi2-vs-magsafe-2026.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://keepwireless.com/articles/verify-qi2-certification.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://keepwireless.com/articles/top-5-desktop-qi2-chargers-2026.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://keepwireless.com/articles/qi2-1.3-protocol-2026.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://keepwireless.com/articles/3in1-vs-2in1-charging-stations.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://keepwireless.com/articles/oem-vs-odm-sourcing.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://keepwireless.com/articles/15w-vs-75w-wireless-charging.html</loc>
+        <lastmod>2026-03-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://keepwireless.com/articles/wireless-stand-vs-flat-pad.html</loc>
+        <lastmod>2026-03-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
