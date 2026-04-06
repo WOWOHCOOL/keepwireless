@@ -859,6 +859,44 @@ button {
     gap: 16px;
 }
 
+.cta-partner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+}
+
+.cta-partner-text {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.cta-partner-link {
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.cta-partner-link:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+
+.cta-partner-logo {
+    height: 32px !important;
+    width: auto !important;
+    max-width: 140px !important;
+    filter: sepia(50%) saturate(150%) hue-rotate(60deg);
+    transition: filter 0.3s ease;
+}
+
+.cta-partner-link:hover .cta-partner-logo {
+    filter: sepia(30%) saturate(200%) hue-rotate(60deg);
+}
+
 /* Footer */
 .main-footer {
     background: var(--bg-secondary);
